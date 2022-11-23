@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200&family=Pacifico&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Hello humans, I am Bagel 🐶</title>
+
+    <style>
+      :root{
+    --primary-color-branding:  rgb(255, 206, 189);
+    --secondary-color-branding: rgb(244, 156, 162);
+    --third-color-branding: rgb(247, 163, 188);
+    --main-font:"Nunito";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+
+body {
+  font-family: var(--main-font);
+  color: rgb(186, 31, 140);
+  background-color: var(--primary-color-branding);
+
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 10px 0;
+  line-height: 1.2;
+  
+}
+
+h1.logo{
+   font-size: 30px;
+  margin: 10px 0;
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+h5{
+  font-size: 20px;
+}
+
+.fav{
+  font-size: 25px;
+    margin: 50px 6px 4px -10px;
+    background-color: var(--secondary-color-branding);
+    padding: 20px 20px;
+    text-transform: capitalize;
+    
+
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+ li.hobbies:hover {
+      background: var(--secondary-color-branding);
+         
+
+    }
+
+    li.hobbies{
+       transition: all 200ms ease-in-out;
+        padding: 40px 0;
+      margin: 0 auto;
+        text-align: center;
+        max-width: 700px;
+        color: rgb(72, 66, 66);
+           font-family: var(--main-font);
+           font-size: 30px;
+    }
+
+
+  
+
+
+
+.big-screen{
+  max-width: 950px;
+  margin: 0 auto;
+    display: block;
+  position: relative;
+   box-sizing: border-box;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+.navbar {
+  background-color: var(--secondary-color-branding);
+  height: 70px;
+  padding: 0 30px;
+}
+
+.navbar a:hover {
+  color: #9867C5;
+  border-bottom: 3px solid #9867C5;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+
+
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.showcase {
+  height: 450px;
+  background-color: var(--primary-color-branding);
+}
+
+.showcase p {
+  margin-bottom: 30px;
+}
+
+
+.showcase-form {
+  padding-left: 7px;
+}
+
+.supporting-text{
+  color: var(--secondary-color-branding);
+  font-weight: 700;
+  font-size: 28px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.grid-item-1,
+.grid-item-2 {
+  position: relative;
+  top: 50px;
+}
+
+.showcase input[type='email'] {
+  padding: 10px 70px 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+.showcase-form {
+  margin: auto;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 12px 20px;
+  background: #9867C5;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 100%;
+}
+
+
+section.activities {
+  padding: 10px;
+
+}
+
+
+.activities img {
+  
+     height: 100%;
+      border-radius: 100px;
+      max-width: 200px;
+      min-width: 200;
+      border: 6px solid var(--secondary-color-branding);
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        align-items: center;
+}
+
+
+.activities h3{
+  text-align: center;
+   color: rgb(186, 31, 140);
+   margin: 0%;
+}
+
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 52px 0px -43px 50px; 
+  align-items: center;
+ 
+}
+
+div.card {
+  align-items: center;
+  margin: 0;
+  max-width: 271.33px;
+  max-height: 241.96px;
+}
+
+.facts{
+text-align: center;
+margin: 80px 80px;
+font-size: 40px;
+     font-weight: 800;
+  color: rgb(186, 31, 140);
+  background-color: var(--secondary-color-branding);
+  padding: 20px 20px;
+  text-shadow: #9867C5;
+  text-transform: capitalizes;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+ol{
+    text-align: center;
+    font-size: 20px;
+     line-height: 1.2;
+}
+
+
+.numbers{
+    font-weight: 900;
+    color: rgb(186, 31, 140);
+}
+
+
+.news{
+  padding-left: 5px;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.btn-2 {
+  border-radius: 6px;
+  padding: 12px 50px;
+  background: var(--secondary-color-branding);
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.email-address  {
+  padding: 8px 70px 10px 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+
+
+footer {
+  background-color: var(--secondary-color-branding);
+  padding: 0 auto;
+}
+
+
+
+
+.profiles{
+  color: white;
+  font-size: 20px;
+  margin: 10px 0px 10px 800px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.fa-2x{
+  margin:10px;
+}
+
+
+.little-info{
+  font-size: 17px;
+  font-weight: 700;
+  padding: 15px 0px 40px 0px;
+}
+
+
+
+    </style>
+</head>
+<body>
+     <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Bagel 🐾</h1>
+            <nav id="navButton">
+                <ul>
+                    <li class="nav"> <a class= "outline" id="outline" href="index.html"> Home </a> </li>    
+                </ul>
+            </nav>
+        </div>
+     </div>
+     <div class="big-screen"> 
+     <section class="showcase">
+      <div class="container">
+        <div class="grid">
+          <div class="grid-item-1">
+            <div class="showcase-text">
+            <h1 id="bagel">Get to know Bagel 🐾 my puppy!</h1>
+            <p class="supporting-text" id="thankYou">"I am a 4 month old Beagle Lab Mix who loves humans and dogs. I live in Melbourne with mom and dad and I am really excited about everything"</p>
+
+          </div>
+         
+    
+      
+        </div>
+   
+      <div class="grid-item-2">
+        <div class="image">
+          <img src="images/AI ILUSTRATED-01.png" alt="Bagel" >
+        </div>
+      </div>
+    </div>
+  </div>
+     </section>
+
+    <section class="activities">
+      <div class="container">
+        <h4 class="fav">My favourite activities</h4>
+
+        <div class="activities grid-3">
+         <div class="card">
+            <div class="circle">
+              <img src="images/park.jpg" alt="" width="200px" height="200px">
+            </div>
+            <h5>Play with dogs in the park</h5>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <img src="images/chew.jpg" alt="" width="200px" height="200px">
+            </div>
+            <h5>Chews on everything 🙄</h5>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <img src="images/family.jpg" alt="" width="200px" height="200px">
+            </div>
+            <h5>Spending time with my human parents 💜</h5>
+
+          </div>
+        </div>
+      </div>
+    </section>
+<section clas="5-facts">
+    <h3 class="facts"> 5 fun facts about me</h3>
+    <ol>
+      <li class="hobbies"> <span class="numbers">1 - </span>Vacum machines terrifies me 😓</li>
+      <li class="hobbies"> <span class="numbers">2 - </span>I have 13 siblings 🐾</li>
+      <li class="hobbies"> <span class="numbers">3 - </span> I've already run my first 5km with mom 🏅</li>
+      <li class="hobbies"> <span class="numbers">4 - </span> I'm obsessed with wood 🪵</li>
+      <li class="hobbies"> <span class="numbers">5 - </span> I love bones and pig ears 🐷</li>
+      </ul>
+      </section>
+          <div class="newsletter">
+            <form class="news" id="signup-form">
+              <input class="email-address"type="email" id="email-input" placeholder="Enter your email address">
+              <input type="submit" class="btn-2" id="submitForm" value="Join our dog community">
+              <p class="little-info"> Let's be friends! Subscribe here to get a calendar to meet Bagel in the park
+                😃</p>
+            </form>
+            </div>
+            </div>
+<footer>
+  <div class="container grid-3">
+    <div class="copyright">
+      <h1 class="logo">Bagel</h1>
+    </div>
+    <div class="profiles">
+      <a href="https://www.instagram.com/pamguicha/?next=%2F"><em class="fab fa-instagram fa-2x"></em></a>
+      <a href="https://www.linkedin.com/in/pamelamardonesg/"><em class="fab fa-linkedin-in fa-2x"></em></a>
+    </div>
+  </div>
+</footer>
+  <script>
+  function WelcomeUsers() {
+    let dogLover = prompt("Are you a dog lover 🐾?");
+    dogLover = dogLover.toLowerCase();
+    dogLover = dogLover.trim();
+    dogLover = dogLover.replace("Yep", "yess");
+    if (dogLover === "yes") {
+      alert("Welcome to my puppy landing page🐾");
+    } else {
+      alert("Don't worry, Bagel will make you change your mind 🐕");
+    }
+  }
+  WelcomeUsers();
+
+
+  function emailform(event) {
+    event.preventDefault();
+    let input = document.querySelector("#email-input");
+    alert("Thank you, check your inbox 📧");
+  }
+
+  let signupForm = document.querySelector("#signup-form");
+  signupForm.addEventListener("submit", emailform);
+
+
+  function navButton(event) {
+    event.preventDefault();
+    let input = document.querySelector("#outline");
+  }
+  let play = document.querySelector("#navButton");
+  play.addEventListener("click", navButton);
+
+
+
+  </script> 
+</body>
+</html>
